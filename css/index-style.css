@@ -1,4 +1,37 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header, .text, .footer {
+    padding: 26px 34px;
+    color: white;
+}
 .header {
-	display: flex;
-    flex-direction: row-reverse;
+    height: 60px;
+    background-color: blue;
+    font-size: 20px;
+    padding: 10px;
+
+    flex-basis: 100%;
+}
+.text {
+    background-color: royalblue;
+    font-size: 20px;
+    padding: 10px;
+
+    flex-basis: 100%;
+}
+.footer {
+    background-color: cadetblue;
+    font-size: 20px;
+    padding: 10px;
+
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .header, .text, .footer {
+        flex-basis: 100%;
+    }
 }
