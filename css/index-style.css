@@ -2,6 +2,7 @@
     margin: 0;
 }
 #particles-js {
+    z-index: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -12,40 +13,45 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Prompt", sans-serif;
-    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    min-height: 200vh;
     flex-direction: column;
     background-image: url("../resources/images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .header, .text, .footer {
-    padding: 26px 34px;
+    z-index: 1;
+    padding: 20px;
     color: white;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 .header {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    height: 60px;
+    backdrop-filter: blur(5px);
 
     flex-basis: 100%;
 }
 .text {
     flex: 1;
-    /* background-color: royalblue; */
-
-    flex-basis: 100%;
+    z-index: -1;
+}
+.welcome {
+    font-size: 25px;
+    margin: 300px;
 }
 .footer {
+    padding: 10px;
     bottom: 0;
     text-align: center;
-    background-color: cadetblue;
     flex-basis: 100%;
-
+    background-color: rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
