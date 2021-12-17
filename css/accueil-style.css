@@ -68,10 +68,9 @@ body {
 
 .navbar {
     position: fixed;
-    top: 0;
     bottom: 0;
-    left: 0;
-    width: 10rem;
+    top: 0;
+    width: 18rem;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     z-index: 2;
@@ -90,12 +89,13 @@ body {
     width: 50%;
 }
 
-.navbar-item {
+.navbar-link {
     list-style: none;
     color: white;
+    text-decoration: none;
+
 }
 
-a {
-    color: white;
-    
+.navbar-item:last-child {
+    margin-top: 0;
 }
