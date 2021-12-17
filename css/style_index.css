@@ -21,6 +21,7 @@ a
 	font-size: 24px;
 	overflow: hidden;
 	transition: 0.2s;
+	font-family: Ubuntu;
 }
 a:hover
 {
