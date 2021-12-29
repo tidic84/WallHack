@@ -93,9 +93,28 @@ body {
     list-style: none;
     color: white;
     text-decoration: none;
+    padding: 0;
 
 }
 
 .navbar-item:last-child {
     margin-top: 0;
+}
+
+a i.description {
+    pointer-events: none;
+}
+.transition {
+    position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      bottom: 0;
+      z-index: 101;
+      background-color: rgb(37, 50, 59);
+      transition: 0.5s ease-out;
+    }
+      
+.transition.is-active {
+        left: 0px;
 }
