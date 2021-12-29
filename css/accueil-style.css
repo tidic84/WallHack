@@ -70,7 +70,7 @@ body {
     position: fixed;
     bottom: 0;
     top: 0;
-    width: 18rem;
+    width: 3rem;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     z-index: 2;
@@ -78,15 +78,12 @@ body {
 }
 
 .navbar-menu {
+    padding:0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     list-style: none;
-    flex-shrink: 10;
     color: white;
-    width: 50%;
 }
 
 .navbar-link {
@@ -94,12 +91,38 @@ body {
     color: white;
     text-decoration: none;
     padding: 0;
+    height: 5rem;
+    width: 100%;
+}
+.navbar-icon {
+    margin: 0 0.5rem 0.2rem;
+    font-size: 1.5rem;
+    min-width: 2rem;
+}
+.navbar-item {
+    align-items: center;
+    width: 100%;
+    min-width: 2rem;
+    padding: 1rem 0;
+    padding-top: 2rem;
+    font-size: 1.5rem;
 
 }
-
-.navbar-item:last-child {
-    margin-top: 0;
+.navbar-title {
+    font-size: 2.8rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
 }
+.navbar:not(:hover) .navbar-link {
+    display: none;
+}
+.navbar:hover {
+    width: 17rem;
+}
+
+
+/* ## Transition ## */
 
 a i.description {
     pointer-events: none;
