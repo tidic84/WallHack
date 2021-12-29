@@ -1,3 +1,7 @@
+:root {
+    --navbar-transition-speed: 0.5s;
+}
+
 * {
     margin: 0;
 }
@@ -45,6 +49,9 @@ body {
     margin-top: auto;
     width: 60%;
 }
+.logo {
+    transition: var(--navbar-transition-speed);
+}
 .footer {
     /*padding: 10px;*/
     /*bottom: 0;*/
@@ -67,6 +74,7 @@ body {
 }
 
 .navbar {
+    white-space: nowrap;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -75,6 +83,8 @@ body {
     backdrop-filter: blur(10px);
     z-index: 2;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: width var(--navbar-transition-speed);
+
 }
 
 .navbar-menu {
@@ -108,6 +118,9 @@ body {
     font-size: 1.5rem;
 
 }
+.navbar-item:last-child{
+    margin-top: auto;
+}
 .navbar-title {
     font-size: 2.8rem;
     margin: 1.5rem;
@@ -120,7 +133,9 @@ body {
 .navbar:hover {
     width: 17rem;
 }
-
+.navbar:hover .logo {
+    transform: translateX(15%) rotate(-180deg) ;
+}
 
 /* ## Transition ## */
 
@@ -129,15 +144,15 @@ a i.description {
 }
 .transition {
     position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      bottom: 0;
-      z-index: 101;
-      background-color: rgb(37, 50, 59);
-      transition: 0.5s ease-out;
-    }
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: rgb(37, 50, 59);
+    transition: 0.5s ease-out;
+}
       
 .transition.is-active {
-        left: 0px;
+    left: 0px;
 }
