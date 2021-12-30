@@ -103,6 +103,7 @@ body {
     padding: 0;
     height: 5rem;
     width: 100%;
+    transition: 0.25s;
 }
 .navbar-link:hover {
 }
@@ -127,12 +128,13 @@ body {
     margin-left: 2.5rem;
     font-weight: bold;
     text-align: justify;
-    left: -999px;
+    margin-left: -200px;
     display: inline;
     position: absolute;
+    transition: var(--navbar-transition-speed);
 }
 .navbar:not(:hover) .navbar-link {
-    display: none;
+    color: rgba(0, 0, 0, 0)
 }
 .navbar:hover {
     width: 17rem;
@@ -141,7 +143,7 @@ body {
     transform: translateX(12rem) rotate(-180deg) ;   
 }
 .navbar:hover .navbar-title {
-    left: 0px;   
+    transform: translateX(225px);
 }
 
 
