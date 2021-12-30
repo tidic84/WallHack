@@ -13,12 +13,17 @@
 }
 
 body
-{
+{	
+	color: var(--main-color);;
+	margin-left: 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	background-image: url("../resources/images/doc fond.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+	flex-direction: column;
 }
 .container
 {
@@ -256,8 +261,10 @@ body
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+	font-size: 1.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
     flex-basis: 100%;
+	width:100%
 }
 .footer {
     padding: 20px;
@@ -267,6 +274,7 @@ body
     font-size: 15px;
     box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.5);
     flex-basis: 100%;
+	width:100%
 
 }
 /*
