@@ -24,13 +24,13 @@ body {
 ## Container ## 
 */
 .container {
-    margin-top: 5rem;
-    flex: 1;
-    flex-wrap: wrap;
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
 
 }
 .container .card {
@@ -48,36 +48,42 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    transform-style: preserve-3d;
 }
 
 .container .card .content {
     padding: 20px;
     text-align: center;
+    transition: 0.5s;
 }
 .container .card .content h3{
     font-size: 2rem;
     color: var(--main-color);
     z-index: 1;
     padding-bottom: 10px;
+    text-decoration:underline;
 }
 
 .container .card .content p{
     font-size: 1.5rem;
     color: var(--main-color);
-    font-weight: 150;
-    z-index: 1;
+    font-weight: 100;
 }
 .container .card .content a{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
     margin-top: 15px;
-    background: white;
-    color:black;
+    background: #fff;
+    color: #000;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.container .card .content a:hover{
+    background: rgba(255, 255, 255, 0.5);
 }
 /* 
 ## Header and footer ##
