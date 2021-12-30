@@ -83,6 +83,33 @@ body
 {
 	background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
+{
+	background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
+{
+	background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
+{
+	background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(7):before,
+.container .box:nth-child(7):after
+{
+	background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(8):before,
+.container .box:nth-child(8):after
+{
+	background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
 
 .container .box span
 {
@@ -153,7 +180,7 @@ body
 
 
 
-
+/*ANIMATION BOX*/
 @keyframes animate
 {
 	0%,100%
@@ -165,7 +192,7 @@ body
 		transform: translateY(-10px);
 	}
 }
-
+/*POSITION DES TRUCS*/
 .container .box .content
 {
 	position: relative;
@@ -179,27 +206,27 @@ body
 	transition: 0.5s;
 	color: #fff;
 }
-
+/*POSITION EN DESSOUS*/
 .container .box:hover .content
 {
 	left: -25px;
 	padding: 60px 40px;
 }
-
+/*TITRE*/
 .container .box .content h2
 {
 	font-size: 2em;
 	color: #fff;
 	margin-bottom:10px ;
 }
-
+/*CE QU'IL Y A D'ECRIT*/
 .container .box .content p
 {
 	font-size: 1.1em;
 	margin-bottom: 10px;
 	line-height: 1.4em;
 }
-
+/*LIEN*/
 .container .box .content a
 {
 	display: inline-block;
@@ -212,4 +239,19 @@ body
 	font-weight: 700;
 	margin-top: 5px;
 
+}
+/*TRANSITION*/
+.transition {
+position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 101;
+  background-color: rgb(37, 50, 59);
+  transition: 0.5s ease-out;
+}
+  
+.transition.is-active {
+	left: 0px;
 }
