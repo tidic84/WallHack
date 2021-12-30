@@ -104,6 +104,9 @@ body {
     height: 5rem;
     width: 100%;
 }
+.navbar-link:hover {
+    background-color: rgba(0, 0, 0);
+}
 .navbar-icon {
     margin: 0 0.5rem 0.2rem;
     font-size: 1.5rem;
@@ -116,16 +119,18 @@ body {
     padding: 1rem 0;
     padding-top: 2rem;
     font-size: 1.5rem;
-
 }
 .navbar-item:last-child{
     margin-top: auto;
 }
 .navbar-title {
     font-size: 2.8rem;
-    margin: 1.5rem;
+    margin-left: 2.5rem;
     font-weight: bold;
     text-align: justify;
+    left: -999px;
+    display: inline;
+    position: absolute;
 }
 .navbar:not(:hover) .navbar-link {
     display: none;
@@ -134,9 +139,11 @@ body {
     width: 17rem;
 }
 .navbar:hover .logo {
-    transform: translateX(15%) rotate(-180deg) ;
+    transform: translateX(12rem) rotate(-180deg) ;   
 }
-
+.navbar:hover .navbar-title {
+    left: 0px;   
+}
 /* ## Transition ## */
 
 a i.description {
