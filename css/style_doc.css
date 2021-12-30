@@ -5,6 +5,13 @@
 	box-sizing: border-box;
 	font-family: consolas;
 }
+:root {
+    --main-color: rgb(214, 214, 214);
+    --secondary-color: rgb(131, 199, 255);
+    --navbar-transition-speed: 0.5s;
+    --background-color: rgba(0, 0, 0, 0.1);
+}
+
 body
 {
 	display: flex;
@@ -266,6 +273,7 @@ body
 ## NavBar ##
 */
 .navbar {
+	color: var(--main-color);
 	left:0;
     z-index: 1;
     padding: 20px;
@@ -273,7 +281,7 @@ body
     position: fixed;
     bottom: 0;
     top: 0;
-    width: 3rem;
+    width: 5.5rem;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     z-index: 2;
