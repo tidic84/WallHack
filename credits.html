@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style_credits.css" />
 	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
 	<script src="js/transition.js"></script>
-</head>
+    </head>
 
 <body>
     <div class="transition transition is-active"></div>
@@ -42,15 +42,13 @@
     <div class="container">
         <div class ="card">
             <div class ="content"> 
-                <h2>01</h2>
-                <h3>Cedric</h3>
+                <h3>Cedric&Tom</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <a href="#">Voir Plus</a>
             </div>
         </div>
         <div class ="card">
             <div class ="content"> 
-                <h2>02</h2>
                 <h3>Autres</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <a href="#">Voir Plus</a>
@@ -58,8 +56,7 @@
         </div>
         <div class ="card">
             <div class ="content"> 
-                <h2>03</h2>
-                <h3>Tom</h3>
+                <h3>Sources</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <a href="#">Voir Plus</a>
             </div>
@@ -70,4 +67,18 @@
 		<p>Copyright © WallHack</p>
 	</footer>
 
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+        });
+    </script>
+    <script>
+        VanillaTilt.init(document.querySelector(".your-element"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
 </body>
