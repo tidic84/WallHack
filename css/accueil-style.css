@@ -105,7 +105,6 @@ body {
     width: 100%;
 }
 .navbar-link:hover {
-    background-color: rgba(0, 0, 0);
 }
 .navbar-icon {
     margin: 0 0.5rem 0.2rem;
@@ -144,6 +143,10 @@ body {
 .navbar:hover .navbar-title {
     left: 0px;   
 }
+
+
+
+
 /* ## Transition ## */
 
 a i.description {
