@@ -26,7 +26,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#text {
+    
+}
 .header, .text, .welcome, .footer, .navbar{
     z-index: 1;
     padding: 20px;
