@@ -1,0 +1,71 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #1d061a;
+	/*background-image: url("../resources/images/doc fond.png");*/
+}
+
+
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: 100vh;
+	flex-wrap: wrap;
+	padding: 40 px 0;
+}
+
+.container .box
+{
+	position: relative;
+	width: 320 px;
+	height: 400 px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 30px;
+	transition: 0.5s;
+}
+
+.container .box: :before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	border-radius: 8px;
+	transform: skewX(15deg);
+	transition: 0.5s;
+}
+.container .box: :after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	border-radius: 8px;
+	transform: skewX(15deg);
+	transition: 0.5s;
+	filter: blur(30px);
+	transition: 0.5s;
+}
+.content
+{
+	display: none;
+}
