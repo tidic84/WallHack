@@ -7,7 +7,7 @@
 }
 :root {
     --main-color: rgb(214, 214, 214);
-    --secondary-color: rgb(131, 199, 255);
+    --secondary-color: rgb(224, 117, 117);
     --navbar-transition-speed: 0.5s;
     --background-color: rgba(0, 0, 0, 0.1);
 }
@@ -275,7 +275,6 @@ body
     box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.5);
     flex-basis: 100%;
 	width:100%
-
 }
 /*
 ## NavBar ##
