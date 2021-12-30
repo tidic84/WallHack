@@ -9,7 +9,7 @@
 }
 body {
     color: var(--main-color);;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'consolas';
     background-image: url("../resources/images/documentation-background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +34,7 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+    font-size: 1.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
     flex-basis: 100%;
 }
@@ -45,7 +46,6 @@ body {
     font-size: 15px;
     box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.5);
     flex-basis: 100%;
-
 }
 /*
 ## NavBar ##

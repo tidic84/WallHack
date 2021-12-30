@@ -18,7 +18,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'consolas';
     font-weight: 300;
     min-height: 100vh;
     flex-direction: column;
