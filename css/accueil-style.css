@@ -1,5 +1,8 @@
 :root {
+    --main-color: rgb(214, 214, 214);
+    --secondary-color: rgb(169, 149, 255);
     --navbar-transition-speed: 0.5s;
+    --background-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -27,7 +30,7 @@ body {
 .header, .text, .welcome, .footer, .navbar{
     z-index: 1;
     padding: 20px;
-    color: white;
+    color: var(--main-color);;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -50,6 +53,7 @@ body {
     width: 60%;
 }
 .logo {
+    color: var(--main-color);
     transition: var(--navbar-transition-speed);
 }
 .footer {
@@ -93,21 +97,23 @@ body {
     flex-direction: column;
     height: 100%;
     list-style: none;
-    color: white;
+    color: var(--main-color);;
 }
 
 .navbar-link {
     list-style: none;
-    color: white;
+    color: var(--main-color);
     text-decoration: none;
     padding: 0;
     height: 5rem;
     width: 100%;
     transition: 0.25s;
 }
-.navbar-link:hover {
+.navbar-item:hover .navbar-icon{
+    color: var(--secondary-color);
 }
 .navbar-icon {
+    transition: var(--navbar-transition-speed);
     margin: 0 0.5rem 0.2rem;
     font-size: 1.5rem;
     min-width: 2rem;
