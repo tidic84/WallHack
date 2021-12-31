@@ -26,9 +26,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#text {
-    
-}
+
 .header, .text, .welcome, .footer, .navbar{
     z-index: 1;
     padding: 20px;
@@ -112,6 +110,8 @@ body {
     color: var(--secondary-color);
 }
 .navbar-icon {
+    color: var(--main-color);
+    text-decoration: none;
     transition: var(--navbar-transition-speed);
     margin: 0 0.5rem 0.2rem;
     font-size: 1.5rem;

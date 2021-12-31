@@ -180,6 +180,8 @@ body {
     transition: 0.25s;
 }
 .navbar-icon {
+    color: var(--main-color);
+    text-decoration: none;
     transition: var(--navbar-transition-speed);
     margin: 0 0.5rem 0.2rem;
     font-size: 1.5rem;
