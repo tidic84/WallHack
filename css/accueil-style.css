@@ -170,3 +170,10 @@ a i.description {
 .transition.is-active {
     left: 0px;
 }
+
+h2
+{
+    margin: 400px;
+    /*top: 500px;*/
+    color: rgb(142, 68, 173);
+}
