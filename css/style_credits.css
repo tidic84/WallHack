@@ -91,6 +91,7 @@ body {
 }
 .container .card .content button:hover {
     background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 /* 
 ## Header and footer ##
