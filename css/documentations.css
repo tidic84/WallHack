@@ -7,6 +7,10 @@
     --navbar-transition-speed: 0.5s;
     --background-color: rgba(0, 0, 0, 0.1);
 }
+@font-face {
+    font-family: 'consolas';
+    src: url("../resources/fonts/consolas.ttf") format("truetype");
+}
 body {
     color: var(--main-color);;
     font-family: 'consolas';
