@@ -193,10 +193,13 @@ body {
     transition: var(--navbar-transition-speed);
 }
 .navbar-item:hover .navbar-icon{
-    color: var(--secondary-color);
+    opacity: 1;
+    /* color: var(--secondary-color); */
 }
 .navbar:not(:hover) .navbar-link {
-    color: rgba(0, 0, 0, 0)
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
 }
 .navbar:hover {
     width: 17rem;
