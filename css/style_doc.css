@@ -361,7 +361,7 @@ COLOR BACKGROUND
     transition: var(--navbar-transition-speed);
 }
 .navbar-item:hover .navbar-icon{
-    color: var(--secondary-color);
+    opacity: 0.5;
 }
 .navbar:not(:hover) .navbar-link {
     color: rgba(0, 0, 0, 0)
