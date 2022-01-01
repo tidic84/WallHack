@@ -9,6 +9,10 @@ body
 	background: #031321;
 	font-family: consolas;
 }
+@font-face {
+    font-family: 'consolas';
+    src: url("../resources/fonts/consolas.ttf") format("truetype");
+}
 a
 {
 	position: relative;
