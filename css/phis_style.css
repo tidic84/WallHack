@@ -113,8 +113,8 @@ titre1
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
 }
-/*
-.texte1
+
+/*.texte1
 {
     position: relative;
     width: 1250px;
