@@ -28,6 +28,12 @@ body {
     background-image: url("../resources/images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 0%;
+    width: 100% ;
+}
+#corp{
+    width:50%;
+    height:100%;
 }
 
 .header, .text, .welcome, .footer, .navbar{
@@ -42,7 +48,6 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-
     flex-basis: 100%;
 }
 .text {
@@ -174,9 +179,9 @@ a i.description {
     left: 0px;
 }
 
-h2
+.intro
 {
     margin: 400px;
     /*top: 500px;*/
-    color: rgb(142, 68, 173);
+    color: #00ffef;
 }
