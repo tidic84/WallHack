@@ -78,6 +78,7 @@ body {
 }
 
 .navbar {
+    font-weight: 300;
     white-space: nowrap;
     position: fixed;
     bottom: 0;
@@ -110,7 +111,7 @@ body {
     transition: 0.25s;
 }
 .navbar-item:hover .navbar-icon{
-    color: var(--secondary-color);
+    opacity: 0.5;
 }
 .navbar-icon {
     color: var(--main-color);
