@@ -80,7 +80,8 @@ body {
     display: block;
 
 }
-.container .card .content button {
+.container .card .content button
+{
     font-family: consolas;
     font-weight: bold;
     font-size: 18px;
@@ -97,7 +98,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
-.container .card .content button:hover {
+.container .card .content button:hover
+{
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
