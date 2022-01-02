@@ -185,4 +185,6 @@ a i.description {
     margin: 400px;
     /*top: 500px;*/
     color: #C208FD;
+    position: absolute;
+    z-index: 1;
 }
