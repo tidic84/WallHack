@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>WallHack - Les cryptomonnaies</title>
+	<link rel="stylesheet" type="text/css" href="../css/documentations.css" />
+	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
+	<script src="../js/transition.js"></script>
+</head>
+
+<body>
+    <div class="transition transition is-active"></div>
+
+    <header class="header">WallHack - Les cryptomonnaies</header>
+
+    <nav class="navbar">
+		<ul class="navbar-menu">
+			<li class="navbar-item">
+				<div class="navbar-link navbar-title">Menu</div>
+				<i class="fas fa-chevron-right navbar-icon fa-lg logo"></i>
+			</li>
+			<li class="navbar-item">
+				<a href="../accueil.html" class="fas fa-home fa-lg navbar-icon"></a>
+				<a href="../accueil.html" class="navbar-link">Accueil</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="../documentation.html" class="fas fa-folder fa-lg navbar-icon"></a>
+				<a href="../documentation.html" class="navbar-link">Documentation</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="../credits.html" class="fas fa-address-card fa-lg navbar-icon"></a>
+				<a href="../credits.html" class="navbar-link">Credits</a>
+			</li>
+			<li class="navbar-item ">
+				<a href="../index.html" class="fas fa-sign-out-alt fa-lg navbar-icon"></a>
+				<a href="../index.html" class="navbar-link">Quitter</a>
+			</li>
+		</ul>
+	</nav>
+
+    <div class="container">
+
+        <div class="title">Les cryptomonnaies</div>
+		<div class = "text">
+			Les cryptomonnaies sont des monnaies <strong>virtuelles</strong> mais contrairement aux banques traditionnelles, 
+			elles sont basées sur <strong>la blockchain</strong>. Elles sont décentralisées, 
+			et donc plus <strong>sécurisées</strong> du au fait que les transactions sont validées par un ensemble d’utilisateurs. 
+			Il est souvent dit que les cryptomonnaies sont anonymes, car elles ne sont pas liées à un nom d’utilisateur. 
+			Mais elles sont en réalité retraçable car toutes les transactions sont écrites dans la blockchain.
+		</div>
+
+		<div class ="subtitle">Qu'est ce qu’est la Blockchain ?</div>
+		<div class = "text">
+			Une blockchain est une technologie de stockage de données décentralisé, 
+			en peer to peer, ou en pair à pair. 
+			Elle fonctionne donc sans organe central car chaque utilisateur est un nœud, 
+			et doit assumer des fonctions serveur. 
+			La blockchain est une base de données qui est hébergée par tous les pairs.
+			<div class="box" style="float: left; width: 280px; height: 280px;">
+				<img src="../resources/images/crypto/centralized-network.png" alt="Il y avais une image la :cry:" width="250" height="250"> 
+			<br><p>Réseau centralisé</p>
+			</div>
+			<div class="box" style="width: 280px; height: 280px;">
+				<img src="../resources/images/crypto/decentralized-network.png" alt="Il y avais une image la :cry:" width="250" height="250"> 
+				<p>Réseau décentralisé</p>
+			</div>
+
+		</div>
+
+		<div class ="subtitle">Comment fonctionne la blockchain ?</div>
+		<div class ="text">
+			Une blockchain est comme son nom l’indique une chaîne de blocs dans lesquelles sont inscrites les transactions, 
+			elles doivent être scellées avec un hash à chiffrage asymétrique, 
+			c’est un chiffrage qui possède une clé pour le chiffrage (clé publique) et une autre clé pour le déchiffrage (clé privée).
+			Mais il y a une difficulté au calcul des ces hashs,
+			elle est ajustée pour qu’un bloc soit généré en moyenne toutes les 10 minutes.
+			Par exemple: les hashs doivent commencer par un certain nombre de zéro,
+			et donc il faut tester des combinaisons aléatoires jusqu'à obtenir le bon hash.
+			Tout cela utilise énormément de puissance de calcul.
+		</div>
+		<div class="box" style="float: left; width: 280px; height: 280px;">
+			<img src="../resources/images/crypto/chiffrement-symetrique.png" alt="Il y avais une image la :cry:" width="250" height="250"> 
+		<br><p>Chiffrement symétrique</p>
+		</div>
+		<div class="box" style="width: 280px; height: 280px;">
+			<img src="../resources/images/crypto/chiffrement-asymetrique.png" alt="Il y avais une image la :cry:" width="250" height="250"> 
+			<p>Chiffrement asymétrique</p>
+		</div>
+
+		<div class ="text">
+			Quand un utilisateur trouve le bon hash et envoie son bloc, 
+			il est inscrit dans la blockchain et reçoit un certain nombre de bitcoin qui sont générés, 
+			ces personnes sont appelés “mineurs” car quand notre économie était basé sur l’or, 
+			les mineurs étaient les seuls à apporter de la masse monétaire tout comme les mineurs de bitcoin.
+
+
+			<br>
+			
+		</div>
+    </div>
+
+    <footer class="footer">
+		<p>Copyright © WallHack</p>
+	</footer>
+
+</body>
