@@ -15,7 +15,7 @@ body {
     
     color: var(--main-color);;
     font-family: 'consolas';
-    background-image: url("../resources/images/credits-background.png");
+    background-image: url("../resources/images/background/credits-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
