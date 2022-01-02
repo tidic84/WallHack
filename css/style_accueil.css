@@ -186,5 +186,5 @@ a i.description {
     /*top: 500px;*/
     color: #C208FD;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
