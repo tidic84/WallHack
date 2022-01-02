@@ -23,7 +23,7 @@ body
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-image: url("../resources/images/doc fond.png");
+	background-image: url("../resources/images/background/doc-main-background.png");
 	background-repeat: no-repeat;
     background-size: cover;
 	flex-direction: column;
