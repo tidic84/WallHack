@@ -3,14 +3,14 @@
 }
 :root {
     --main-color: rgb(214, 214, 214);
-    --secondary-color: rgb(0, 183, 255);
+    --secondary-color: #54FF73;
     --navbar-transition-speed: 0.5s;
     --background-color: rgba(0, 0, 0, 0.1);
 }
 body {
     color: var(--main-color);;
     font-family: 'consolas';
-    background-image: url("../resources/images/credits-background.png");
+    background-image: url("../resources/images/documentation-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -27,6 +27,7 @@ body {
 .texte1 c {
     color: var(--secondary-color);
 }
+
 .titre1
 {
     position: relative;
@@ -85,7 +86,7 @@ body {
 {
     position: relative;
     margin: 35px;
-    font-weight: 500;
+    font-weight: 100;
     font-size: large;
 }
 
