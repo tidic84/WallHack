@@ -101,13 +101,14 @@ body {
     margin-left: 2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    float: right;
 
     max-height: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    display: block;
+    display: flex;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -116,7 +117,7 @@ body {
     font-size: 20px;
 }
 .box {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     position: relative;
     width: auto;
