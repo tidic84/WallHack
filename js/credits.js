@@ -3,7 +3,7 @@ const audio = document.querySelector("audio");
 
 bouton.addEventListener("click", () => {
     if (audio.paused) {
-        audio.volume = 0.2;
+        audio.volume = 1;
         audio.play();
 
     } else {
