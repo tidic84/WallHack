@@ -1,6 +1,6 @@
 const textDisplay = document.getElementById('text');
 //Bienvenue sur WallHack, le site de documentation sur la cybersécurité !
-const phrases = ["sur la cybersécurité!", "sur la cryptomonnaie!", "sur les bases du réseau", "ça fait beaucoup la non ?"];
+const phrases = ["la cybersécurité!", "la cryptomonnaie!", "les bases du réseau"];
 let i = 0;
 let j = 0;
 let currentPhrase = [""];
