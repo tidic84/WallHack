@@ -73,7 +73,7 @@ body {
     flex: 1;
     z-index: -1;
     margin-top: 6rem;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 .welcome {
     font-size: 55px;
@@ -84,8 +84,8 @@ body {
     color: #96b8c9;
 }
 .main-logo {
-    margin: 6rem 3rem;
-    margin-left: 20%;
+    margin: 4rem 0;
+    margin-left: 18%;
 }
 
 @media screen and (max-width: 600px) {
