@@ -142,8 +142,8 @@ body {
 ## Header and footer ##
  */
  .header {
-    position: fixed;
-    padding: 20px;
+    position: relative;
+    padding: 20px 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -154,9 +154,9 @@ body {
 	width:100%;
  }
 .footer {
-    position: fixed;
+    position: relative;
     margin-right: 0;
-    padding: 20px;
+    padding: 20px 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);

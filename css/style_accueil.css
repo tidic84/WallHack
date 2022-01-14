@@ -79,8 +79,9 @@ body {
     font-size: 55px;
 }
 .intro {   
-    font-size: 25px;
+    font-size: 22px;
     color: #96b8c9;
+    text-align: justify;
 }
 .main-logo {
     margin: 4rem 0;
@@ -166,7 +167,7 @@ body {
     color: var(--main-color);
     transition: var(--navbar-transition-speed);
 }
-.navbar-item:hover .navbar-icon{
+.navbar-item:hover .navbar-icon {
     opacity: 0.5;
 }
 .navbar:not(:hover) .navbar-link {
