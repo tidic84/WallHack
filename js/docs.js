@@ -25,3 +25,10 @@ function animFunc(element, inversed = false) {
         element.classList.remove("in")
     }
 }
+
+const summaryItem = document.querySelectorAll(".summary-item");
+for (let i = 0; i < summaryItem.length; i++) {
+    summaryItem[i].onclick = function() {
+        document.location.href = summaryItem[i].getAttribute("href");
+    }
+}
