@@ -49,11 +49,11 @@
         
 		<div class="title">Top 10 OWASP</div>
 		<div class = "text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Nunc suscipit lorem dolor, 
-			a aliquet odio placerat in. 
-			Maecenas dui ligula, congue consectetur ante id, 
-			finibus consequat tellus.
+			L'Open Web Application Security Project® (OWASP) est une fondation à but non lucratif qui travaille à améliorer la sécurité des logiciels. 
+			Grâce à des projets de logiciels open source dirigés par la communauté, 
+			des centaines de chapitres locaux dans le monde, 
+			des dizaines de milliers de membres et des conférences éducatives et de formation de premier plan, 
+			la Fondation OWASP est la source pour les développeurs et les technologues pour sécuriser le Web.
 		</div>
 
 		<div class ="subtitle">Qu'est ce que c'est ?</div>
@@ -78,8 +78,58 @@
 			<br>
 			<br>
 			<h3>4. Broken Access Control</h3>
-
-
+			Le contrôle d'accès applique une politique telle que les utilisateurs ne peuvent pas agir en dehors de leurs autorisations prévues. 
+			Les défaillances entraînent généralement la divulgation non autorisée d'informations, 
+			la modification ou la destruction de toutes les données ou l'exécution d'une fonction commerciale en dehors des limites de l'utilisateur.
+			<br>
+			<br>
+			<h3>5. Security Misconfiguration</h3>
+			Une Security Misconfiguration se définit simplement comme le fait de ne pas mettre en œuvre tous les contrôles de sécurité pour un serveur ou une application web, 
+			ou de mettre en œuvre les contrôles de sécurité, mais de le faire avec des erreurs. 
+			Ce qu'une entreprise pensait être un environnement sûr présente en réalité des lacunes ou des erreurs dangereuses qui exposent l'organisation à des risques. 
+			<br>
+			<br>
+			<h3>6. Sensitive Data Exposure</h3>
+			Sensitive Data Exposure se produit lorsqu'une organisation expose sans le savoir des données sensibles ou lorsqu'un incident de sécurité entraîne la destruction, 
+			la perte, l'altération, la divulgation non autorisée ou l'accès non autorisé à des données sensibles, de manière accidentelle ou illégale. 
+			Cette exposition des données peut résulter d'une protection inadéquate d'une base de données, 
+			d'une mauvaise configuration lors de la création de nouvelles instances de datastores, 
+			d'une utilisation inappropriée des systèmes de données, etc.
+			<br>
+			<br>
+			<h3>7. Insufficient Attack Protection</h3>
+			Les applications et les API sont attaquées en permanence. 
+			La plupart des applications et des API détectent les entrées non valides, 
+			mais les rejettent simplement, laissant l'attaquant attaquer encore et encore. 
+			De telles attaques indiquent qu'un utilisateur malveillant ou compromis sonde ou exploite des vulnérabilités. 
+			Détecter et bloquer les attaques manuelles et automatisées est l'un des moyens les plus efficaces d'augmenter la sécurité.
+			<br>
+			<br>
+			<h3>8. Cross-Site Request Forgery (CSRF)</h3>
+			En sécurité des systèmes d'information, le cross-site request forgery, 
+			abrégé CSRF (parfois prononcé sea-surf en anglais) ou XSRF, 
+			est un type de vulnérabilité des services d'authentification web.
+			L’objet de cette attaque est de transmettre à un utilisateur authentifié une requête HTTP falsifiée qui pointe sur une action interne au site, 
+			afin qu'il l'exécute sans en avoir conscience et en utilisant ses propres droits. 
+			L’utilisateur devient donc complice d’une attaque sans même s'en rendre compte. 
+			L'attaque étant actionnée par l'utilisateur, 
+			un grand nombre de systèmes d'authentification sont contournés.
+			<br>
+			<br>
+			<h3>9. Using Components with Know Vulnerability</h3>
+			Certains composants vulnérables (par exemple, 
+			les bibliothèques de framework) peuvent être identifiés et exploités avec des outils automatisés, 
+			élargissant le pool d'agents de menace au-delà des attaquants ciblés pour inclure des acteurs chaotiques.
+			Pratiquement toutes les applications ont ces problèmes car la plupart des équipes de développement ne se concentrent pas sur la mise à jour de leurs composants/bibliothèques. 
+			Dans de nombreux cas, les développeurs ne connaissent même pas tous les composants qu'ils utilisent, 
+			sans parler de leurs versions. Les dépendances des composants aggravent encore les choses.
+			<br>
+			<br>
+			<h3>10. Underprotected APIs</h3>
+			Les applications modernes utilisent des API provenant de nombreuses sources, soit directement, 
+			soit en tant que sous-composants de bibliothèques tierces liées lors de la création d'une application. 
+			Toutes ces API peuvent présenter des vulnérabilités non protégées et, plus inquiétant encore, 
+			elles peuvent être opaques aux outils d'analyse de sécurité standard utilisés pour mettre les risques en évidence.
 
 		</div>
     </div>
@@ -103,8 +153,10 @@
 				<a href="https://fr.barracuda.com/glossary/owasp-top-10">barracuda.com</a>
 			</p>
 			<p>BASM <a href="https://hdivsecurity.com/owasp-broken-authentication-and-session-management">hdivsecurity.com</a> </p>
-			<p>Cross site scripting <a href="https://fr.m.wikipedia.org/wiki/Cross-site_scripting ">wikipedia.com</a> </p>
-        </div>
+			<p>Cross site scripting <a href="https://fr.m.wikipedia.org/wiki/Cross-site_scripting">wikipedia.com</a> </p>
+			<p>Cross-site request forgery <a href="https://fr.wikipedia.org/wiki/Cross-site_request_forgery">wikipedia.com</a> </p>
+			<p>Autres <a href="https://hdivsecurity.com/">hdivsecurity.com</a> </p>
+		</div>
     </div>
 	<button id="sources">Voir Plus</button>
 
