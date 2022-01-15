@@ -21,6 +21,21 @@
 
     <div class="container">
 		<div class="title">Les failles 0d</div>
+		<br>
+		<br>
+		<div class="subtitle"><strong><u>Sommaire</u></strong></div>
+		<div class="">
+			<a href="#1">Définition de zero-day</a><br>
+			<a href="#2">Que sont les attaques zero-day et comment fonctionnent-elles ?</a><br>
+			<a href="#3">Qui lance des attaques zero-day ?</a><br>
+			<a href="#4">Qui les failles d’exploitation zero-day ciblent-elles ?</a><br>
+			<a href="#5">Comment identifier des attaques zero-day</a><br>
+			<a href="#6">Exemples d’attaques zero-day</a><br>
+			<a href="#7">Comment vous protéger contre les attaques zero-day</a><br>
+		</div>
+		<br>
+		<br>
+		<div class="subtitle" id="1">Définition de zero-day</div>
 		<div class="text">
 			« Zero-day » est un terme générique qui décrit les dernières vulnérabilités de sécurité détectées que les cybercriminels peuvent utiliser pour attaquer les systèmes.<br> 
 			Le terme « zero-day » désigne le fait que le fournisseur ou le développeur vient de prendre connaissance de la faille, 
@@ -32,7 +47,7 @@
 		</div>
 		<br>
 		<br>
-		<div class="subtitle">Que sont les attaques zero-day et comment fonctionnent-elles ?</div>
+		<div class="subtitle" id="2">Que sont les attaques zero-day et comment fonctionnent-elles ?</div>
 		<div class="text">
 				Les logiciels présentent souvent des failles de sécurité que les cybercriminels peuvent exploiter pour provoquer des dégâts. Les développeurs de logiciels <br>
 				recherchent constamment les vulnérabilités à rectifier, impliquant le développement d’une solution intégrée dans une nouvelle mise à jour.<br>
@@ -63,7 +78,7 @@
 
 		<br>
 		<br>
-		<div class="subtitle">Qui lance des attaques zero-day ?</div>
+		<div class="subtitle" id="3">Qui lance des attaques zero-day ?</div>
 		<div class="text">
 			Les acteurs malveillants qui lancent des attaques zero-day s’inscrivent dans différentes catégories selon leur motivation : <br>
 			Par exemple :<br>
@@ -77,7 +92,7 @@
 		<br>
 		<br>
 
-		<div class="subtitle">Qui les failles d’exploitation zero-day ciblent-elles ?</div>
+		<div class="subtitle" id="4">Qui les failles d’exploitation zero-day ciblent-elles ?</div>
 		<div class="text">
 			Une faille d’exploitation zero-day peut exploiter les vulnérabilités de différents systèmes, y compris : <br>
 			•	Systèmes d'exploitation <br>
@@ -111,7 +126,7 @@
 		</div>
 		<br>
 		<br>
-		<div class="subtitle">Comment identifier des attaques zero-day</div>
+		<div class="subtitle" id="5">Comment identifier des attaques zero-day</div>
 		<div class="text">
 			Les vulnérabilités zero-day pouvant prendre toutes sortes de formes, comme le chiffrement manquant des données, les autorisations manquantes, les algorithmes interrompus, les bugs, les problèmes de sécurité des mots de passe, etc., ils peuvent être difficiles à détecter. En raison de la nature de ce type de vulnérabilités, les informations précises sur les failles d’exploitation zero-day ne sont disponibles qu’une fois les problèmes identifiés.
 			<br>
@@ -124,7 +139,55 @@
 			2.	D’autres techniques recherchent les caractéristiques du programme malveillant zero-day sur la base de leur interaction avec le système cible. Au lieu d’examiner le code des fichiers entrants, cette technique recherche leurs interactions avec le logiciel existant et tente de déterminer si elles résultent d’actions malveillantes.<br>
 			3.	Le Machine Learning est de plus en plus utilisé pour détecter les données des failles d’exploitation précédemment enregistrées en vue d’établir un référentiel de comportements système sécurisés à partir des données des interactions passées et actuelles avec le système. Plus les données disponibles sont nombreuses, plus la détection est fiable.<br>
 			<br>
-
+			<br>
+			<strong>Souvent, une combinaison de différents systèmes de détection est utilisée.</strong>
+		</div>
+		<br>
+		<br>
+		<div class="subtitle" id="6">Exemples d’attaques zero-day</div>
+		<div class="text">
+			Exemples d’attaques zero-day récentes : <br>
+			<br>
+			<u>2021: Vulnérabilité zero-day de Chrome</u><br>
+			En 2021, Google Chrome a fait l’objet d’une série de menaces zero-day ayant entraîné la publication de mises à jour par Chrome. La vulnérabilité provenait d’un bug dans le moteur JavaScript V8 utilisé dans le navigateur Web.
+			<br>
+			<br>
+			<u>2020: Zoom</u>
+			<br>
+			Une vulnérabilité a été identifiée sur la célèbre plateforme de vidéoconférence. Au cours de cette attaque zero-day, les cybercriminels accédaient au PC d’un utilisateur à distance exécutant une ancienne version de Windows. Si la cible était un administrateur, le cybercriminel pouvait prendre le plein contrôle de sa machine et accéder à l’ensemble de ses fichiers.
+			<br>
+			<br>
+			<u>Apple iOS</u><br>
+			Apple iOS est souvent décrit comme la plus sécurisée des grandes plateformes de smartphone. Toutefois, en 2020, le système d’exploitation a fait l’objet d’au moins deux séries de vulnérabilités zero-day, notamment un bug zero-day permettant aux cybercriminels de compromettre les iPhones à distance.
+			<br>
+			<br>
+			<u>2019: Microsoft Windows, Europe de l’Est</u><br>
+			Cette attaque se concentrait sur l’augmentation locale des droits, un domaine vulnérable de Microsoft Windows, et a ciblé des institutions gouvernementales d’Europe de l’Est. La faille d’exploitation zero-day a profité d’une vulnérabilité de droits locale de Microsoft Windows pour exécuter un code arbitraire, installer des applications, puis afficher et modifier les données sur les applications compromises. Une fois l’attaque identifiée et signalée au Centre de réponse aux problèmes de sécurité Microsoft, un correctif a été développé et déployé.
+			<br>
+			<br>
+			<u>2017: Microsoft Word</u><br>
+			Cette faille d’exploitation zero-day a mis en péril des comptes bancaires personnels. Les victimes étaient des personnes qui avaient ouvert accidentellement un document Word malveillant. Le document affichait une invite « Charger le contenu distant », avec une fenêtre contextuelle demandant aux utilisateurs un accès externe depuis un autre programme. Lorsque les victimes cliquaient sur Oui, le document installait un programme malveillant sur leur appareil, capable de capturer leurs informations de connexion bancaires.
+			<br>
+			<br>
+			<u>Stuxnet</u><br>
+			Stuxnet figure parmi les exemples les plus célèbres d’attaque zero-day. Découvert pour la première fois en 2010, mais se répandant depuis 2005, ce ver informatique malveillant a affecté les ordinateurs du secteur de la fabrication exécutant un automate programmable industriel (API). Le ver ciblait principalement les usines d’enrichissement de l’uranium iraniennes dans le but d’interrompre le programme nucléaire du pays. Il a infecté les API en profitant des vulnérabilités du logiciel Siemens Step7. Les API ont alors exécuté des commandes inattendues sur les machines de la chaîne de montage. L’histoire de Stuxnet a fait ensuite l’objet d’un documentaire intitulé Zero Days.
+		</div>
+		<br>
+		<br>
+		<div class="subtitle" id="7">Comment vous protéger contre les attaques zero-day</div>
+		<div class="text">
+			Pour se protéger contre les attaques zero-day et garantir la sécurité de leurs ordinateurs et de leurs données, les particuliers comme les entreprises doivent suivre les
+			meilleures pratiques de cybersécurité. Ce qui inclut :<br>
+			<br>
+			<strong>Maintenez l’ensemble de vos logiciels et de vos systèmes d’exploitation à jour.</strong> Les fournisseurs incluent des correctifs de sécurité dans les mises à jour pour couvrir les dernières vulnérabilités identifiées. Des outils mis à jour renforceront votre sécurité.
+			<br>
+			<strong>Utilisez uniquement les applications indispensables.</strong> Plus vous installez d’applications, plus les risques de vulnérabilités sont élevés. Vous pouvez réduire ces risques réseau en utilisant uniquement les applications dont vous avez besoin.
+			<br>
+			<strong>Utilisez un réseau privé virtuel (VPN)</strong> Un pare-feu joue un rôle essentiel pour protéger votre système contre les menaces zero-day. Vous pouvez garantir une protection maximale en le configurant de façon à autoriser uniquement les transactions nécessaires.
+			<br>
+			<strong>Formez les utilisateurs au sein des entreprises.</strong> De nombreuses attaques zero-day misent sur les erreurs humaines. Le fait de former les salariés et les utilisateurs aux bonnes mesures de sécurité contribuera à la protéger en ligne et à protéger l’entreprise contre les failles d’exploitation zero-day et autres menaces numériques.
+			<br>
+			<strong>Utilisez une solution logicielle antivirus complète.</strong>	 Kaspersky Total Security vous aide à protéger vos appareils en bloquant les menaces connues et inconnues.
 		</div>
 	</div>
 
