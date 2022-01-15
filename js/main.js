@@ -59,8 +59,8 @@ function animFunc(element, inversed = false) {
 
 let textCache = [];
 document.onkeydown = function(e) {
-    textCache += e.keyCode;
-    if(textCache == "38384040373937396665") {
+    textCache += e.key;
+    if(textCache.includes("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba")) {
         document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
     console.log(textCache);
