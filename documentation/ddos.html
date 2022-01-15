@@ -7,12 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="../css/documentations.css" />
 	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
 	<script src="../js/transition.js"></script>
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="favicon.png">
 </head>
 
 <body>
     <div class="transition transition is-active"></div>
 
-    <header class="header">WallHack - DDOS</header>
+    <header class="header">
+		<img class="header-title" src="../resources/images/logo/logo-black-bold-bg.png" width="30" style="border-radius: 15px">
+		<p class="header-title">WallHack - DDOS</p>
+	</header>
 
     <nav class="navbar">
 		<ul class="navbar-menu">
@@ -78,9 +84,34 @@
 		</div>
     </div>
 
+	<!-- POPUP -->
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popup">
+        <div class"popup-header">
+            <h3 align="center">Sources</h3>
+            <i class="fas fa-times close" id="close"></i>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content">
+            <p>
+				DDOS 
+				<a href="https://fr.wikipedia.org/wiki/Attaque_par_d%C3%A9ni_de_service">wikipedia</a> 
+				/ 
+				<a href="https://www.ssi.gouv.fr/guide/comprendre-et-anticiper-les-attaques-ddos/">ssi.gouv.fr</a>
+				/ 
+				<a href="https://www.ovh.com/fr/anti-ddos/principe-anti-ddos.xml ">ovh.com</a>
+			</p>
+        </div>
+    </div>
+	<button id="sources">Voir Plus</button>
 
     <footer class="footer">
 		<p>Copyright © WallHack</p>
 	</footer>
+
+	
+	<!-- Scripts -->
+	<script src="../js/docs.js"></script>
+	
 <!-- Template by Tidic (oui j'ai le melon !) -->
 </body>

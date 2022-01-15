@@ -7,12 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="../css/documentations.css" />
 	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
 	<script src="../js/transition.js"></script>
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="favicon.png">
 </head>
 
 <body>
     <div class="transition transition is-active"></div>
 
-    <header class="header">WallHack - OWASP</header>
+    <header class="header">
+		<img class="header-title" src="../resources/images/logo/logo-black-bold-bg.png" width="30" style="border-radius: 15px">
+		<p class="header-title">WallHack - OWASP</p>
+	</header>
 
     <nav class="navbar">
 		<ul class="navbar-menu">
@@ -52,18 +58,63 @@
 
 		<div class ="subtitle">Qu'est ce que c'est ?</div>
 		<div class = "text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Nunc suscipit lorem dolor, 
-			a aliquet odio placerat in. 
-			Maecenas dui ligula, congue consectetur ante id, 
-			finibus consequat tellus. 
-			Nunc feugiat elementum arcu.
+			<h3>1. Injections</h3>
+			Une attaque par injection est une injection de code malicieux dans un serveur ou dans un service, 
+			cela peut faire fuiter tout le contenu d'une base de données ou contourner des mots de passes. (Ex: Injection SQL)
+			<br>
+			<br>
+			<h3>2. Broken Authentication and Session Management</h3>
+			Ce type de failles peut donner le droit à un attaquant d'ignorer ou contourner le système d'authentification. 
+			Cela peut faire fuiter des mot de passe.
+			<br>
+			<br>
+			<h3>3. Cross-Site Scripting (XSS)</h3>
+			Le cross-site scripting (abrégé XSS) est un type de faille de sécurité des sites web permettant d'injecter du contenu dans une page, 
+			provoquant ainsi des actions sur les navigateurs web visitant la page. 
+			Les possibilités des XSS sont très larges puisque l'attaquant peut utiliser tous les langages pris en charge par le navigateur (JavaScript, Java...) 
+			et de nouvelles possibilités sont régulièrement découvertes notamment avec l'arrivée de nouvelles technologies comme HTML5. 
+			Il est par exemple possible de rediriger vers un autre site pour de l'hameçonnage ou encore de voler la session en récupérant les cookies.
+			Le cross-site scripting est abrégé XSS pour ne pas être confondu avec le CSS (feuilles de style), X se lisant « cross » (croix) en anglais.
+			<br>
+			<br>
+			<h3>4. Broken Access Control</h3>
+
+
+
 		</div>
     </div>
 
 
+	<!-- POPUP -->
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popup">
+        <div class"popup-header">
+            <h3 align="center">Sources</h3>
+            <i class="fas fa-times close" id="close"></i>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content">
+            <p>
+				Owasp 
+				<a href="https://owasp.org/">owasp.org</a> 
+				/ 
+				<a href="https://www.httpcs.com/fr/top-10-owasp">httpcs.com</a>
+				/ 
+				<a href="https://fr.barracuda.com/glossary/owasp-top-10">barracuda.com</a>
+			</p>
+			<p>BASM <a href="https://hdivsecurity.com/owasp-broken-authentication-and-session-management">hdivsecurity.com</a> </p>
+			<p>Cross site scripting <a href="https://fr.m.wikipedia.org/wiki/Cross-site_scripting ">wikipedia.com</a> </p>
+        </div>
+    </div>
+	<button id="sources">Voir Plus</button>
+
     <footer class="footer">
 		<p>Copyright © WallHack</p>
 	</footer>
+
+	
+	<!-- Scripts -->
+	<script src="../js/docs.js"></script>
+	
 <!-- Template by Tidic (oui j'ai le melon !) -->
 </body>

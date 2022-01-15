@@ -10,22 +10,40 @@ rollBouton.addEventListener("click", () => {
         audio.pause();
     }
 });
+const popupS = document.querySelector("#sources-popup");
+const popupBgS = document.querySelector("#sources-popupBg");
+const btnS = document.querySelector("#sources");
+const closeS = document.querySelector("#sources-close");
 
-const popup = document.querySelector(".popup");
-const btn = document.getElementById("youko");
-const span = document.getElementsByClassName("close")[0];
+btnS.onclick = function() {
+    animFunc(popupS, false);
+    animFunc(popupBgS, false);
+}
+closeS.onclick = function() {
+    animFunc(popupS, true);
+    animFunc(popupBgS, true);
+}
+popupBgS.onclick = function() {
+    animFunc(popupS, true);
+    animFunc(popupBgS, true);
+}
+
+const popup = document.querySelector("#youko-popup");
+const popupBg = document.querySelector("#youko-popupBg");
+const btn = document.querySelector("#youko");
+const close = document.querySelector("#youko-close");
 
 btn.onclick = function() {
-    popup.style.display = "block";
     animFunc(popup, false);
+    animFunc(popupBg, false);
 }
-span.onclick = function() {
+close.onclick = function() {
     animFunc(popup, true);
+    animFunc(popupBg, true);
 }
-window.onclick = function(event) {
-    if (event.target == popup) {
-        animFunc(popup, true);
-    }
+popupBg.onclick = function() {
+    animFunc(popup, true);
+    animFunc(popupBg, true);
 }
 function animFunc(element, inversed = false) {
    if (!inversed) {

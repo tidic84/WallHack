@@ -7,12 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="../css/documentations.css" />
 	<script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
 	<script src="../js/transition.js"></script>
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="../favicon.png">
+<link rel="icon"  type="image/png"  href="favicon.png">
 </head>
 
 <body>
     <div class="transition transition is-active"></div>
 
-    <header class="header">WallHack - Les cryptomonnaies</header>
+    <header class="header">
+		<img class="header-title" src="../resources/images/logo/logo-black-bold-bg.png" width="30" style="border-radius: 15px">
+		<p class="header-title">WallHack - Les cryptomonnaies</p>
+	</header>
 
     <nav class="navbar">
 		<ul class="navbar-menu">
@@ -93,15 +99,42 @@
 			il est inscrit dans la blockchain et reçoit un certain nombre de bitcoin qui sont générés, 
 			ces personnes sont appelés “mineurs” car quand notre économie était basé sur l’or, 
 			les mineurs étaient les seuls à apporter de la masse monétaire tout comme les mineurs de bitcoin.
-
-
 			<br>
-			
 		</div>
     </div>
+
+
+	<!-- POPUP -->
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popup">
+        <div class"popup-header">
+            <h3 align="center">Sources</h3>
+            <i class="fas fa-times close" id="close"></i>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="popup-content">
+            <p>
+				Blockchain 
+				<a href="https://fr.wikipedia.org/wiki/Blockchain">wikipedia</a> 
+				/ 
+				<a href="https://www.economie.gouv.fr/entreprises/blockchain-definition-avantage-utilisation-application">economie.gouv.fr</a>
+				/ 
+				<a href="https://youtu.be/du34gPopY5Y">youtube.com: ScienceEtonnante</a>
+			</p>
+			<p>
+				Chiffrement 
+				<a href="https://www.youtube.com/watch?v=XdBdtX9ix30">youtube.com: paul granger</a> 
+			</p>
+        </div>
+    </div>
+	<button id="sources">Voir Plus</button>
 
     <footer class="footer">
 		<p>Copyright © WallHack</p>
 	</footer>
+
+	<!-- Scripts -->
+    
+	<script src="../js/docs.js"></script>
 
 </body>
