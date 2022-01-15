@@ -1,17 +1,21 @@
-* {
+* 
+{
     margin: 0
 }
-:root {
+:root 
+{
     --main-color: rgb(214, 214, 214);
     --secondary-color: rgb(131, 199, 255);
     --navbar-transition-speed: 0.5s;
     --background-color: rgba(0, 0, 0, 0.1);
 }
-@font-face {
+@font-face 
+{
     font-family: 'consolas';
     src: url("../resources/fonts/consolas.ttf") format("truetype");
 }
-body {
+body 
+{
     color: var(--main-color);;
     font-family: 'consolas';
     font-weight: 300;
@@ -33,7 +37,8 @@ body {
 /* 
 ## Content ## 
 */
-.container {
+.container 
+{
     z-index: -1;
     position: relative;
 
@@ -58,7 +63,8 @@ body {
     margin-bottom: 5.5rem;
     text-align: justify;
 }
-.title {
+.title 
+{
     justify-content: center;
     align-items: center;
     
@@ -123,7 +129,8 @@ body {
 
     font-size: 20px;
 }
-.box {
+.box 
+{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -182,7 +189,8 @@ a {
     text-decoration: none;
     color: var(--secondary-color)
 }
-.popup {
+.popup 
+{
     margin: 10%;
     position: fixed;
     z-index: 5;
@@ -205,17 +213,20 @@ a {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
 }
-.popup.in {
+.popup.in 
+{
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
-.popup.out {
+.popup.out 
+{
     opacity: 0;
     pointer-events: auto;
     transform: scale(0);
 }
-.popup-bg {
+.popup-bg 
+{
     opacity: 0;
     position: fixed;
     height: 100%;
@@ -226,31 +237,38 @@ a {
 
     transition: 0.3s ease-in-out;
 }
-.popup-bg.in {
+.popup-bg.in 
+{
     opacity: 1;
     visibility: visible;
 }
-.popup-bg.out {
+.popup-bg.out 
+{
     opacity: 0;
     visibility: hidden;
 }
-.popup-content {
+.popup-content 
+{
     margin: 15% auto;
     
 }
-.popup-content p {
+.popup-content p 
+{
     margin: 5px;
 }
-.popup-header {
+.popup-header 
+{
     font-size: 1.5rem;
 }
-.popup-divider {
+.popup-divider 
+{
     border-top: 1px solid #bbb;
     margin-left: -20px;
     width: 110%;
     margin-top: 1rem;
 }
-.close {
+.close 
+{
     color: var(--main-color);
     float: right;
     font-size: 1.5rem;
@@ -258,7 +276,8 @@ a {
     margin-top: -22px;
     transition: var(--navbar-transition-speed);
 }
-.close:hover{
+.close:hover
+{
     opacity: 0.5;
     text-decoration: none;
     cursor: pointer;
