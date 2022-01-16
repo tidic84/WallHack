@@ -1,15 +1,3 @@
-const rollBouton = document.querySelector("#tidic");
-const audio = document.querySelector("audio");
-
-rollBouton.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.volume = 0.6;
-        audio.play();
-
-    } else {
-        audio.pause();
-    }
-});
 const popupS = document.querySelector("#sources-popup");
 const popupBgS = document.querySelector("#sources-popupBg");
 const btnS = document.querySelector("#sources");
@@ -50,16 +38,21 @@ const popupT = document.querySelector("#tidic-popup");
 const popupBgT = document.querySelector("#tidic-popupBg");
 const btnT = document.querySelector("#tidic");
 const closeT = document.querySelector("#tidic-close");
+const audio = document.querySelector("audio");
+audio.volume = 0.5;
 
 btnT.onclick = function() {
+    audio.play();
     animFunc(popupT, false);
     animFunc(popupBgT, false);
 }
 closeT.onclick = function() {
+    audio.pause();
     animFunc(popupT, true);
     animFunc(popupBgT, true);
 }
 popupBgT.onclick = function() {
+    audio.pause();
     animFunc(popupT, true);
     animFunc(popupBgT, true);
 }
