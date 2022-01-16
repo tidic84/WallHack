@@ -99,7 +99,7 @@ document.onkeydown = function(e) {
                 document.location.href = "documentation/bonneteau.html";
             }
 
-            if(submitValue == "oui") {
+            if(submitValue == "esveilloit") {
 
                 const iframe = document.createElement("iframe");
                 iframe.src = "resources/video/approuved.mp4";
