@@ -46,6 +46,23 @@ popupBg.onclick = function() {
     animFunc(popupBg, true);
 }
 
+const popupT = document.querySelector("#tidic-popup");
+const popupBgT = document.querySelector("#tidic-popupBg");
+const btnT = document.querySelector("#tidic");
+const closeT = document.querySelector("#tidic-close");
+
+btnT.onclick = function() {
+    animFunc(popupT, false);
+    animFunc(popupBgT, false);
+}
+closeT.onclick = function() {
+    animFunc(popupT, true);
+    animFunc(popupBgT, true);
+}
+popupBgT.onclick = function() {
+    animFunc(popupT, true);
+    animFunc(popupBgT, true);
+}
 
 let textCache = "";
 document.onkeydown = function(e) {
