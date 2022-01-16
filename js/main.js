@@ -85,7 +85,7 @@ document.onkeydown = function(e) {
             }
 
             if(submitValue == "bonneteau") {
-                document.location.href = "../documentation/bonneteau.html";
+                document.location.href = "documentation/bonneteau.html";
             }
 
         }
