@@ -1,3 +1,36 @@
 Bonjour, voici le site fait par Tom et Cedric.
+Notre site tourne autour de la cibercurité et tend vers d'autres sujets.
 
-Notre site tourne autour de la cibercurité et tant vers d'autres sujets
+Pour une meilleur utilisation, si le glass morphism ne fonctionne pas, il est preferable de changer de navigateur (passer de chrome a edge par exemple).
+Ce site est "communotaire" en plus d'etre un projet scolaire ! En effet il est modifiable mais sera prochainement partager avec des personnes qui travaillent
+dans ce dommaine si vaste...
+
+(il sera modifiable avec git, rendant les choses plus symple)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Il y a quelques petites surprise, notament une... premier indice : konami code in cr
+GOOD LUCK !
