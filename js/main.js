@@ -79,6 +79,7 @@ document.onkeydown = function(e) {
         submitButton.onclick = function() {
             let submitValue = cmdInput.value;
             cmdInput.value = "";
+            textCache = "";
             
             if(submitValue == "lol" || submitValue == "mdr" || submitValue == "xd" || submitValue == "pdtr") {
                 document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -88,6 +89,25 @@ document.onkeydown = function(e) {
                 document.location.href = "documentation/bonneteau.html";
             }
 
+            if(submitValue == "oui") {
+
+                const iframe = document.createElement("iframe");
+                iframe.src = "resources/video/approuved.mp4";
+                document.querySelector(".result").appendChild(iframe);
+
+            }
+            if (submitValue == "clear") {
+                let child = document.querySelector(".result").children;
+                for (i = 0; i < child.length; i++) {
+                    document.querySelector(".result").removeChild(child[i]);
+                }
+            }
+            else {
+                const result = document.createElement("div")
+                const textResult = document.createTextNode("Erreur cette commande n'existe pas");
+                result.appendChild(textResult);
+                document.querySelector(".result").appendChild(result);
+            }
         }
     }    
 }
