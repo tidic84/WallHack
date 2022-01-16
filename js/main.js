@@ -102,6 +102,12 @@ document.onkeydown = function(e) {
                     document.querySelector(".result").removeChild(child[i]);
                 }
             }
+            else {
+                const result = document.createElement("div")
+                const textResult = document.createTextNode("Erreur cette commande n'existe pas");
+                result.appendChild(textResult);
+                document.querySelector(".result").appendChild(result);
+            }
         }
     }    
 }
