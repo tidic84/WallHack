@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <!-- Tete de la page qui contient les métadonnées -->
+    <head>
+        <title>WallHack - Jeu du bonneteau</title>
+        <!-- lier la page html avec la feuille de styles css -->
+        <link rel="stylesheet" type="text/css" href="../css/bonneteau.css">
+        <script src="https://kit.fontawesome.com/275ad3a481.js" crossorigin="anonymous"></script>
+	    <script src="../js/transition.js"></script>
+    </head>
+    <!-- Corp de la page -->
+    <body>
+        <div class="transition transition is-active"></div>
+
+        <header class="header">
+            <img class="header-title" src="../resources/images/logo/logo-black-bold-bg.png" width="30" style="border-radius: 15px">
+            <p class="header-title">WallHack - Credits
+        </header>
+
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <div class="navbar-link navbar-title">Menu</div>
+                    <i class="fas fa-chevron-right navbar-icon fa-lg logo"></i>
+                </li>
+                <li class="navbar-item">
+                    <a href="../accueil.html" class="fas fa-home fa-lg navbar-icon"></a>
+                    <a href="../accueil.html" class="navbar-link">Accueil</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../documentation.html" class="fas fa-folder fa-lg navbar-icon"></a>
+                    <a href="../documentation.html" class="navbar-link">Documentation</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../credits.html" class="fas fa-address-card fa-lg navbar-icon"></a>
+                    <a href="../credits.html" class="navbar-link">Credits</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../index.html" class="fas fa-sign-out-alt fa-lg navbar-icon"></a>
+                    <a href="../index.html" class="navbar-link">Quitter</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <h1 class="titre">Bonneteau</h1>
+            <h3 class="slogan">La carte rouge gagne et les cartes noires perdent</h3>
+
+            <!-- toutes les cartes -->
+            <div class="cards">
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="../resources/images/bonneteau/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="../resources/images/bonneteau/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="../resources/images/bonneteau/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </div>
+
+            <!-- un bouton generer -->
+            <button id="btn">Générer</button>
+        </div>
+
+        <footer class="footer">
+            <p>Copyright © WallHack</p>
+        </footer>
+
+        <!-- script javascript -->
+        <script src="../js/bonneteau.js"></script>
+    </body>
+</html>

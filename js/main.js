@@ -45,6 +45,54 @@ popupBg.onclick = function() {
     animFunc(popup, true);
     animFunc(popupBg, true);
 }
+
+
+let textCache = "";
+document.onkeydown = function(e) {
+    textCache += e.key;
+    if(textCache.includes("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba")) {
+        const popupC = document.querySelector("#cmd-popup");
+        const popupBgC = document.querySelector("#cmd-popupBg");
+        const closeC = document.querySelector("#cmd-close");
+        const submitButton = document.querySelector(".cmd-submit");
+        const cmdInput = document.querySelector("#cmd-input");
+
+        animFunc(popupC, false);
+        animFunc(popupBgC, false);
+
+        closeC.onclick = function() {
+            animFunc(popupC, true);
+            animFunc(popupBgC, true);
+        }
+        popupBgC.onclick = function() {
+            animFunc(popupC, true);
+            animFunc(popupBgC, true);
+        }
+
+        document.onkeydown = function(event) {
+            if (event.key == "Enter") { 
+              event.preventDefault();
+              submitButton.click();
+            }
+          }
+        
+        submitButton.onclick = function() {
+            let submitValue = cmdInput.value;
+            cmdInput.value = "";
+            
+            if(submitValue == "lol" || submitValue == "mdr" || submitValue == "xd" || submitValue == "pdtr") {
+                document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }
+
+            if(submitValue == "bonneteau") {
+                document.location.href = "../documentation/bonneteau.html";
+            }
+
+        }
+    }    
+}
+
+
 function animFunc(element, inversed = false) {
    if (!inversed) {
        element.classList.add("in")
@@ -57,12 +105,4 @@ function animFunc(element, inversed = false) {
 }
 //
 
-let textCache = [];
-document.onkeydown = function(e) {
-    textCache += e.key;
-    if(textCache.includes("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba")) {
-        document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    }
-    console.log(textCache);
-    
-}
+

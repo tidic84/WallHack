@@ -320,9 +320,46 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+#cmd-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cmd-input {
+    margin: 1rem;
+    width: 60%;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: var(--main-color);
+    
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
 
-
-
+::placeholder {
+    color: var(--main-color);
+}
+.cmd-submit {
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    padding: 15px 30px;
+    display: flex;
+    
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
 
 /*
 ## Transition ##
