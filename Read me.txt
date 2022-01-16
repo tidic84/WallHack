@@ -32,10 +32,5 @@ dans ce dommaine si vaste...
 
 
 
-<<<<<<< HEAD
 Il y a quelques petites surprise, notament une... premier indice : konami code in cr (merci de jouer le jeu)
 GOOD LUCK !
-=======
-Il y a quelques petites surprises, notamment une... premier indice : konami code in cr
-GOOD LUCK !
->>>>>>> a2f6d2130a7d3b79b04afcdb7287110b89127fdb
