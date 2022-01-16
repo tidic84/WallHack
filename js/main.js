@@ -79,6 +79,7 @@ document.onkeydown = function(e) {
         submitButton.onclick = function() {
             let submitValue = cmdInput.value;
             cmdInput.value = "";
+            textCache = "";
             
             if(submitValue == "lol" || submitValue == "mdr" || submitValue == "xd" || submitValue == "pdtr") {
                 document.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
