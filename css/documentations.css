@@ -485,7 +485,9 @@ a {
 .navbar:hover .navbar-title {
     transform: translateX(250px);
 }
-
+#nav-title {
+    display: none;
+}
 
 
 @media only screen and (max-width: 1024px) {
