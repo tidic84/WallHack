@@ -31,6 +31,7 @@ body {
     background-size: cover;
     height: 0%;
     width: 100% ;
+    overflow: overlay;
 }
 #corp{
     width:50%;
@@ -94,14 +95,6 @@ body {
 .main-logo {
     margin: 4rem 0;
     margin-left: 18%;
-}
-
-@media screen and (max-width: 600px) {
-    .header,
-    .text,
-    .footer {
-    flex-basis: 100%;
-    }
 }
 
 .navbar {
@@ -191,8 +184,27 @@ body {
     transform: translateX(250px);
 }
 
+/* 
+## Scroll Bar ##
+ */
+ ::-webkit-scrollbar {
+    width: 12px;
+  }
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
 
 /* ## Transition ## */
 
@@ -212,4 +224,68 @@ a i.description {
       
 .transition.is-active {
     left: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .navbar {
+        top: auto;
+        width: 100%;
+        height: 6rem;
+        bottom: 0;
+    }
+    .navbar:hover {
+        width: 100%;
+    }
+    .navbar-hover {
+        width: 100%;
+    }
+    .navbar-menu {
+        flex-direction: row;
+    }
+    #nav-title {
+        display: none;
+    }
+    .navbar-item {
+        margin-left: auto;
+        width: 100%;
+        margin-bottom: auto;
+        margin-left: -5%;
+    }
+    .navbar-link {
+        display: none;
+    }
+    .navbar-item:last-child {
+        margin-bottom: 2rem;
+    }
+    .navbar-icon {
+        font-size: 3rem;
+        min-width: 2rem;
+        margin-top: 2rem;
+    }
+    footer {
+        display: none;
+    }
+    .header-title {
+        font-size: 3rem;
+    }
+    .header-logo {
+        width: 8%;
+        border-radius: 5rem;
+        margin-right: 2rem;
+    }
+    body {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+    .main-logo {
+        display: none;
+    }
+    .content {
+        margin: 1rem 3rem;
+
+    }
+    #particles-js {
+        display: none;
+    }
 }

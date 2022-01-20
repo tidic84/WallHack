@@ -2,20 +2,17 @@
 {
     margin: 0
 }
-:root 
-{
+:root {
     --main-color: rgb(214, 214, 214);
     --secondary-color: rgb(131, 199, 255);
     --navbar-transition-speed: 0.5s;
     --background-color: rgba(0, 0, 0, 0.1);
 }
-@font-face 
-{
+@font-face {
     font-family: 'consolas';
     src: url("../resources/fonts/consolas.ttf") format("truetype");
 }
-body 
-{
+body {
     color: var(--main-color);;
     font-family: 'consolas';
     font-weight: 300;
@@ -30,8 +27,37 @@ body
 
     min-height:100vh;
     align-items: center;
+    overflow: overlay;
 }
 
+div::selection, strong::selection, img::selection, p::selection, br::selection, nav::selection, iframe::selection, button::selection, .navbar-item::selection, a::selection, li::selection, c::selection{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+/* 
+## Scroll Bar ##
+ */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
 
 
 
@@ -462,7 +488,76 @@ a {
 
 
 
-
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: auto;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 2rem;
+    }
+    .navbar {
+        top: auto;
+        width: 100%;
+        height: 6rem;
+        bottom: 0;
+    }
+    .navbar:hover {
+        width: 100%;
+    }
+    .navbar-hover {
+        width: 100%;
+    }
+    .navbar-menu {
+        flex-direction: row;
+    }
+    #nav-title {
+        display: none;
+    }
+    .navbar-item {
+        margin-left: auto;
+        width: 100%;
+        margin-bottom: auto;
+        margin-left: -5%;
+    }
+    .navbar-link {
+        display: none;
+    }
+    .navbar-item:last-child {
+        margin-bottom: 2rem;
+    }
+    .navbar-icon {
+        font-size: 3rem;
+        min-width: 2rem;
+        margin-top: 2rem;
+    }
+    footer {
+        display: none;
+    }
+    .header-title {
+        font-size: 3rem;
+    }
+    .header-logo {
+        width: 8%;
+        border-radius: 5rem;
+        margin-right: 2rem;
+    }
+    body {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+    #sources {
+        margin-bottom: 5rem;
+        width: 15rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+}
 
 /*
 ## Transition ##
